@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dark/Light</title>
+</head>
+<body>
+    <div class="fullscreen">
+        <nav>
+            <div class="container">
+                <h1 class="title">KEY-BORED</h1>  
+                <div class="toggler-container">
+                    <p>DARK🌑</p>
+                    <div class="toggler"><div class="circle"></div></div>
+                    <p>LIGHT🌞</p>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Hello World!</h1>
+            <p>Learning to Toggle Dark to White!</p>
+            <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        </div>
+    </div>
+
+    <script>
+        let toggler = document.querySelector(".toggler")
+        let fullscreen = document.querySelector(".fullscreen")
+        toggler.addEventListener("click", () => {
+            fullscreen.classList.toggle("light")
+        })
+    </script>
+</body>
+</html>
